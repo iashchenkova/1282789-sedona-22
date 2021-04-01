@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotyle-mobile.svg" width="101" height="84" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <button class="main-nav__toogle" type="button">
+      <span class="visually-hidden">Показать меню</span>
+    </button>
+  </header>
+
+  <main class="form-page">
+    <section class="review__intro">
+      <h1>Оставьте свой отзыв</h1>
+      <p> Помогите нашим отелям стать лучше! <br> оставьте отзыв о них, а также о <br> посещенных вами <br>
+        достопримечательностях</p>
+    </section>
+    <fieldset class="introduction">
+      <legend>Представьтесь:</legend>
+      <form method="GET" action="https://echo.htmlacademy.ru">
+        <div>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required placeholder="Введите имя">
+          <label for="surname">Фамилия:</label>
+          <input type="text" id="surname" name="surname" required placeholder="Введите фамилию">
+          <label for="second-name">Отчество:</label>
+          <input type="text" id="second-name" name="second-name" placeholder="Введите отчество">
+        </div>
+      </form>
+    </fieldset>
+    <fieldset class="contact-info">
+      <legend>Контактная информация:</legend>
+      <form method="GET" action="https://echo.htmlacademy.ru">
+        <div>
+          <label for="phone">Контактный телефон:</label>
+          <input type="text" id="phone" name="phone-number" placeholder="Введите телефон">
+          <label for="e-mail">Электронная почта:</label>
+          <input type="text" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+        </div>
+      </form>
+    </fieldset>
+    <fieldset class="impressions">
+      <legend>Ваше общее впечатление</legend>
+      <form method="GET" action="https://echo.htmlacademy.ru">
+        <div>
+          <input type="radio" id="good" name="contact" value="var1" checked>
+          <label for="good">Скорее положительное</label>
+          <input type="radio" id="bad" name="contact" value="var2">
+          <label for="bad">Скорее отрицательное</label>
+          <input type="radio" id="do-not-know" name="contact" value="var3">
+          <label for="do-not-know">Затрудняюсь ответить</label>
+        </div>
+      </form>
+    </fieldset>
+    <fieldset class="attractions">
+      <legend>Посещённые достопримечательности</legend>
+      <form method="GET" action="https://echo.htmlacademy.ru">
+        <div>
+          <input type="checkbox" id="devils-bridge" name="devilsbridge" value="devilsbridge" checked>
+          <label for="devils-bridge">Мост Дьявола</label>
+          <input type="checkbox" id="bell-mountain" name="bell-mountain" value="bell-mountain" checked>
+          <label for="bell-mountain">Гора-Колокол</label>
+          <input type="checkbox" id="slide-park" name="slide-park" value="slide-park" checked>
+          <label for="slide-park">Слайд-парк</label>
+          <input type="checkbox" id="red-rocks" name="red-rocks" value="red-rocks">
+          <label for="red-rocks">Красные скалы</label>
+        </div>
+      </form>
+    </fieldset>
+    <fieldset class="review">
+      <legend>Опишите свои эмоции:</legend>
+      <form method="GET" action="https://echo.htmlacademy.ru">
+        <div>
+          <textarea>Опишите подробно все свои восторги</textarea>
+        </div>
+        <button class="review__button" type="submit">Отправить отзыв</button>
+      </form>
+    </fieldset>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts">
+        <p class="contacts__hashtag">#VISITSEDONA</p>
+        <a class="contacts__phone" href="tel:+74956660166">тел:+7(495)666-01-66</a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" target="blank">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" target="blank">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" target="blank">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <b class="copyright__text">разработано:</b>
+        <a class="copyright__link" href="#">html academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
