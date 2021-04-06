@@ -12,7 +12,6 @@
       <img src="img/logotyle-mobile.svg" width="101" height="84" alt="Седона">
     </a>
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -27,30 +26,27 @@
             <a href="#">HTML academy</a>
           </li>
         </ul>
-      </div>
     </nav>
     <button class="main-nav__toogle" type="button">
       <span class="visually-hidden">Показать меню</span>
     </button>
   </header>
 
-  <main class="form-page">
+  <main class="page-main">
     <section class="review__intro">
       <h1>Оставьте свой отзыв</h1>
-      <p> Помогите нашим отелям стать лучше! <br> оставьте отзыв о них, а также о <br> посещенных вами <br>
+      <p>Помогите нашим отелям стать лучше! <br> оставьте отзыв о них, а также о <br> посещенных вами <br>
         достопримечательностях</p>
     </section>
     <fieldset class="introduction">
       <legend>Представьтесь:</legend>
       <form method="GET" action="https://echo.htmlacademy.ru">
-        <div>
           <label for="name">Имя:</label>
-          <input type="text" id="name" name="name" required placeholder="Введите имя">
+          <input type="text" id="name" name="personal-data" required placeholder="Введите имя">
           <label for="surname">Фамилия:</label>
-          <input type="text" id="surname" name="surname" required placeholder="Введите фамилию">
+          <input type="text" id="surname" name="personal-data" required placeholder="Введите фамилию">
           <label for="second-name">Отчество:</label>
-          <input type="text" id="second-name" name="second-name" placeholder="Введите отчество">
-        </div>
+          <input type="text" id="second-name" name="personal-data" placeholder="Введите отчество">
       </form>
     </fieldset>
     <fieldset class="contact-info">
@@ -68,11 +64,11 @@
       <legend>Ваше общее впечатление</legend>
       <form method="GET" action="https://echo.htmlacademy.ru">
         <div>
-          <input type="radio" id="good" name="contact" value="var1" checked>
+          <input type="radio" id="good" name="impressions" value="var1" checked>
           <label for="good">Скорее положительное</label>
-          <input type="radio" id="bad" name="contact" value="var2">
+          <input type="radio" id="bad" name="impressions" value="var2">
           <label for="bad">Скорее отрицательное</label>
-          <input type="radio" id="do-not-know" name="contact" value="var3">
+          <input type="radio" id="do-not-know" name="impressions" value="var3">
           <label for="do-not-know">Затрудняюсь ответить</label>
         </div>
       </form>
@@ -81,13 +77,13 @@
       <legend>Посещённые достопримечательности</legend>
       <form method="GET" action="https://echo.htmlacademy.ru">
         <div>
-          <input type="checkbox" id="devils-bridge" name="devilsbridge" value="devilsbridge" checked>
+          <input type="checkbox" id="devils-bridge" name="attractions" value="devilsbridge" checked>
           <label for="devils-bridge">Мост Дьявола</label>
-          <input type="checkbox" id="bell-mountain" name="bell-mountain" value="bell-mountain" checked>
+          <input type="checkbox" id="bell-mountain" name="attractions" value="bell-mountain" checked>
           <label for="bell-mountain">Гора-Колокол</label>
-          <input type="checkbox" id="slide-park" name="slide-park" value="slide-park" checked>
+          <input type="checkbox" id="slide-park" name="attractions" value="slide-park" checked>
           <label for="slide-park">Слайд-парк</label>
-          <input type="checkbox" id="red-rocks" name="red-rocks" value="red-rocks">
+          <input type="checkbox" id="red-rocks" name="attractions" value="red-rocks">
           <label for="red-rocks">Красные скалы</label>
         </div>
       </form>
