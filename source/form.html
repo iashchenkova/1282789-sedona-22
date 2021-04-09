@@ -14,20 +14,20 @@
     <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a href="#">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a href="#">HTML academy</a>
           </li>
         </ul>
     </nav>
-    <button class="main-nav__toogle" type="button">
+    <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Показать меню</span>
     </button>
   </header>
@@ -35,7 +35,7 @@
   <main class="page-main">
     <section class="review__intro">
       <h1>Оставьте свой отзыв</h1>
-      <p>Помогите нашим отелям стать лучше! <br> оставьте отзыв о них, а также о <br> посещенных вами <br>
+      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </section>
     <fieldset class="introduction">
@@ -53,25 +53,25 @@
       <legend>Контактная информация:</legend>
       <form method="GET" action="https://echo.htmlacademy.ru">
           <label for="phone">Контактный телефон:</label>
-          <input type="text" id="phone" name="phone-number" placeholder="Введите телефон">
-          <label for="e-mail">Электронная почта:</label>
-          <input type="text" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+          <input type="tel" id="phone" name="phone-number" placeholder="Введите телефон" required>
+          <label for="email">Электронная почта:</label>
+          <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
       </form>
     </fieldset>
     <fieldset class="impressions">
       <legend>Ваше общее впечатление</legend>
-      <form method="GET" action="https://echo.htmlacademy.ru">
-          <input type="radio" id="good" name="impressions" value="var1" checked>
+      <form method="POST" action="https://echo.htmlacademy.ru">
+          <input type="radio" id="good" name="impressions" value="good-impression" checked>
           <label for="good">Скорее положительное</label>
-          <input type="radio" id="bad" name="impressions" value="var2">
+          <input type="radio" id="bad" name="impressions" value="bad-impression">
           <label for="bad">Скорее отрицательное</label>
-          <input type="radio" id="do-not-know" name="impressions" value="var3">
+          <input type="radio" id="do-not-know" name="impressions" value="no-impression">
           <label for="do-not-know">Затрудняюсь ответить</label>
       </form>
     </fieldset>
     <fieldset class="attractions">
       <legend>Посещённые достопримечательности</legend>
-      <form method="GET" action="https://echo.htmlacademy.ru">
+      <form method="POST" action="https://echo.htmlacademy.ru">
           <input type="checkbox" id="devils-bridge" name="attractions" value="devilsbridge" checked>
           <label for="devils-bridge">Мост Дьявола</label>
           <input type="checkbox" id="bell-mountain" name="attractions" value="bell-mountain" checked>
@@ -84,7 +84,7 @@
     </fieldset>
     <fieldset class="review">
       <legend>Опишите свои эмоции:</legend>
-      <form method="GET" action="https://echo.htmlacademy.ru">
+      <form method="POST" action="https://echo.htmlacademy.ru">
         <div>
           <textarea>Опишите подробно все свои восторги</textarea>
         </div>
@@ -101,19 +101,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" target="blank">Twitter</a>
+            <a class="social__link social__link--twitter" href="#" target="_blank">Twitter</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" target="blank">Facebook</a>
+            <a class="social__link social__link--facebook" href="#" target="_blank">Facebook</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" target="blank">Youtube</a>
+            <a class="social__link social__link--youtube" href="#" target="_blank">Youtube</a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright">
         <b class="copyright__text">разработано:</b>
-        <a class="copyright__link" href="#">html academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
       </div>
     </div>
   </footer>
