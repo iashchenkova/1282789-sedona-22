@@ -20,7 +20,7 @@
             <a href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Форма отзыва</a>
+            <a>Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a href="#">HTML academy</a>
@@ -38,40 +38,34 @@
       <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </section>
+    <form method="POST" action="https://echo.htmlacademy.ru">
     <fieldset class="introduction">
       <legend>Представьтесь:</legend>
-      <form method="GET" action="https://echo.htmlacademy.ru">
           <label for="name">Имя:</label>
           <input type="text" id="name" name="personal-data" required placeholder="Введите имя">
           <label for="surname">Фамилия:</label>
           <input type="text" id="surname" name="personal-data" required placeholder="Введите фамилию">
           <label for="second-name">Отчество:</label>
           <input type="text" id="second-name" name="personal-data" placeholder="Введите отчество">
-      </form>
     </fieldset>
     <fieldset class="contact-info">
       <legend>Контактная информация:</legend>
-      <form method="GET" action="https://echo.htmlacademy.ru">
           <label for="phone">Контактный телефон:</label>
           <input type="tel" id="phone" name="phone-number" placeholder="Введите телефон" required>
           <label for="email">Электронная почта:</label>
           <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
-      </form>
     </fieldset>
     <fieldset class="impressions">
       <legend>Ваше общее впечатление</legend>
-      <form method="POST" action="https://echo.htmlacademy.ru">
-          <input type="radio" id="good" name="impressions" value="good-impression" checked>
+          <input type="radio" id="good" name="impressions" value="good" checked>
           <label for="good">Скорее положительное</label>
-          <input type="radio" id="bad" name="impressions" value="bad-impression">
+          <input type="radio" id="bad" name="impressions" value="bad">
           <label for="bad">Скорее отрицательное</label>
-          <input type="radio" id="do-not-know" name="impressions" value="no-impression">
+          <input type="radio" id="do-not-know" name="impressions" value="do-not-know">
           <label for="do-not-know">Затрудняюсь ответить</label>
-      </form>
     </fieldset>
     <fieldset class="attractions">
       <legend>Посещённые достопримечательности</legend>
-      <form method="POST" action="https://echo.htmlacademy.ru">
           <input type="checkbox" id="devils-bridge" name="attractions" value="devilsbridge" checked>
           <label for="devils-bridge">Мост Дьявола</label>
           <input type="checkbox" id="bell-mountain" name="attractions" value="bell-mountain" checked>
@@ -80,17 +74,15 @@
           <label for="slide-park">Слайд-парк</label>
           <input type="checkbox" id="red-rocks" name="attractions" value="red-rocks">
           <label for="red-rocks">Красные скалы</label>
-      </form>
     </fieldset>
     <fieldset class="review">
       <legend>Опишите свои эмоции:</legend>
-      <form method="POST" action="https://echo.htmlacademy.ru">
         <div>
           <textarea>Опишите подробно все свои восторги</textarea>
         </div>
         <button class="review__button" type="submit">Отправить отзыв</button>
-      </form>
     </fieldset>
+  </form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
