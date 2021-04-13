@@ -8,24 +8,24 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img src="img/logotyle-mobile.svg" width="101" height="84" alt="Седона">
     </a>
     <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a>Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML academy</a>
-          </li>
-        </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML academy</a>
+        </li>
+      </ul>
     </nav>
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Показать меню</span>
@@ -39,41 +39,39 @@
     </section>
     <div class="gallery">
       <figure class="photo">
-        <p><img src="img/road-sedona.jpg" width="280" height="280" alt="неродные просторы"></p>
+        <a href="#"><img src="img/road-sedona.jpg" width="280" height="280" alt="неродные просторы"></a>
         <figcaption>
-          <h3 class="photo__caption">Неродные просторы</h3>
+          <p class="photo__caption">Неродные просторы</p>
           <p class="photo__author">Автор фото: Борис</p>
         </figcaption>
       </figure>
       <figure class="photo">
-        <p><img src="img/desert-flowers-sedona.jpg" width="280" height="280" alt="местная растительность"></p>
+        <a href="#"><img src="img/desert-flowers-sedona.jpg" width="280" height="280" alt="местная растительность"></a>
         <figcaption>
-          <h3 class="photo__caption">Местная растительность</h3>
+          <p class="photo__caption">Местная растительность</p>
           <p class="photo__author">Автор фото: Сергей</p>
-         </figcaption>
+        </figcaption>
       </figure>
       <figure class="photo">
-        <p><img src="img/north-road-sedona.jpg" width="280" height="280" alt="дорога на север"></p>
+        <a href="#"><img src="img/north-road-sedona.jpg" width="280" height="280" alt="дорога на север"></a>
         <figcaption>
-          <h3 class="photo__caption">Дорога на север</h3>
+          <p class="photo__caption">Дорога на север</p>
           <p class="photo__author">Автор фото: Пётр</p>
         </figcaption>
       </figure>
       <figure class="photo">
-        <p><img src="img/devils-bridge-sedona.jpg" width="280" height="280" alt="мост дьявола"></p>
+        <a href="#"><img src="img/devils-bridge-sedona.jpg" width="280" height="280" alt="мост дьявола"></a>
         <figcaption>
-          <h3 class="photo__caption">Мост дьявола</h3>
+          <p class="photo__caption">Мост дьявола</p>
           <p class="photo__author">Автор фото: Антон</p>
         </figcaption>
       </figure>
     </div>
-  <section class="video">
-    <h2>Все еще сомневаетесь? </h2>
-    <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    <video>
-      <source src="#">
-    </video>
-  </section>
+    <section class="video">
+      <p class="video__intro">Все еще сомневаетесь?</p>
+      <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <video src="#" poster="img/video-poster.jpg" controls></video>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
