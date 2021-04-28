@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
 </head>
 
 <body class="page__body">
@@ -35,16 +38,17 @@
   </header>
   <main class="page-main">
     <section class="advantages__intro">
-      <h1>Седона — небольшой <br> городок в Аризоне, <br> заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым <br> Седона круче, чем гранд каньон!</p>
+      <img class="advantages-head-img" src="img/back-mobile.jpg" width="320" height="389" alt="Седона">
+      <h1 class="advantages__intro-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="advantages__intro-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <div class="advantages-town advantages-blue">
+        <div class="advantages__blue advantages__town">
           <h3 class="advantages__title">Настоящий городок</h3>
           <p class="advantages__number">— №1 —</p>
-          <p class="advantages__description">Седона не аттракцион для туристов, там <br> течёт своя жизнь</p>
+          <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           <img class="advantages__img" src="img/sedona-town-photo.jpg" width="320" height="260" alt="Седона">
         </div>
         <ul class="advantages-white__list">
@@ -61,34 +65,34 @@
             <p class="advantages__number">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </li>
         </ul>
-        <div class="advantages-bridge advantages-blue">
+        <div class="advantages__blue advantages__bridge">
           <h3 class="advantages__title">Там есть мост дьявола</h3>
           <p class="advantages__number">— №2 —</p>
-          <p class="advantages__description">Да, по нему можно пройти! Если вы <br> осмелитесь, конечно</p>
+          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           <img class="advantages__img" src="img/sedona-bridge-photo.jpg" width="320" height="260" alt="Седона">
         </div>
         <ul class="advantages-grey__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <p class="advantages__number">— №3 —</p>
-            <p class="advantages__description">ВСЕ интересные места находятся <br> очень близко</p>
+            <p class="advantages__description">ВСЕ интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Красивая дорога</h3>
             <p class="advantages__number">— №4 —</p>
-            <p class="advantages__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА <br> совсем НЕ СКУЧНО!</p>
+            <p class="advantages__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Мало туристов</h3>
             <p class="advantages__number">— №5 —</p>
-            <p class="advantages__description">Большинство едет в гранд каньон <br> и толпится там</p>
+            <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="hotel-search">
       <h2>Заинтересовались?</h2>
-      <p class="advantages__number">Укажите предполагаемые даты <br> поездки, и мы покажем вам лучшие <br> предложения
+      <p class="advantages__number">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в седоне</p>
       <input class="hotel-search__button button-blue" type="button" name="search" value="НАЙТИ">
     </section>
@@ -117,7 +121,7 @@
       </div>
       <div class="page-footer__copyright">
         <b class="copyright__text">разработано:</b>
-        <a class="copyright__link" href="#">html academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
       </div>
     </div>
   </footer>

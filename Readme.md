@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Анна Ященкова](https://up.htmlacademy.ru/adaptive/22/user/1282789).
-* Наставник: [Арсений Матыцин] (https://htmlacademy.ru/profile/id225539).
+* Наставник: [Александр Бабченко](https://htmlacademy.ru/profile/id619357).
 
 ---
 
