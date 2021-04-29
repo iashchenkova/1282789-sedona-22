@@ -36,12 +36,12 @@
   </header>
 
   <main class="page-main">
-    <section class="review__intro">
-      <h1 class="review__intro-header">Оставьте свой отзыв</h1>
-      <p class="review__intro-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <section class="review-intro">
+      <h1 class="review-intro__header">Оставьте свой отзыв</h1>
+      <p class="review-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <form method="POST" action="https://echo.htmlacademy.ru">
-      <fieldset class="introduction">
+      <fieldset class="form__introduction">
         <legend>Представьтесь:</legend>
         <label for="name">Имя:</label>
         <input type="text" id="name" name="personal-data" required placeholder="Введите имя">
@@ -50,14 +50,14 @@
         <label for="second-name">Отчество:</label>
         <input type="text" id="second-name" name="personal-data" placeholder="Введите отчество">
       </fieldset>
-      <fieldset class="contact-info">
+      <fieldset class="form__contact-info">
         <legend>Контактная информация:</legend>
         <label for="phone">Контактный телефон:</label>
         <input type="tel" id="phone" name="phone-number" placeholder="Введите телефон" required>
         <label for="email">Электронная почта:</label>
         <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
       </fieldset>
-      <fieldset class="impressions">
+      <fieldset class="form__impressions">
         <legend>Ваше общее впечатление</legend>
         <input type="radio" id="good" name="impressions" value="good" checked>
         <label for="good">Скорее положительное</label>
@@ -66,7 +66,7 @@
         <input type="radio" id="do-not-know" name="impressions" value="do-not-know">
         <label for="do-not-know">Затрудняюсь ответить</label>
       </fieldset>
-      <fieldset class="attractions">
+      <fieldset class="form__attractions">
         <legend>Посещённые достопримечательности</legend>
         <input type="checkbox" id="devils-bridge" name="attractions" value="devilsbridge" checked>
         <label for="devils-bridge">Мост Дьявола</label>
@@ -77,7 +77,7 @@
         <input type="checkbox" id="red-rocks" name="attractions" value="red-rocks">
         <label for="red-rocks">Красные скалы</label>
       </fieldset>
-      <fieldset class="review">
+      <fieldset class="form__review">
         <legend>Опишите свои эмоции:</legend>
         <div>
           <textarea>Опишите подробно все свои восторги</textarea>
