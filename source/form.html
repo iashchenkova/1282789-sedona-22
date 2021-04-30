@@ -15,20 +15,20 @@
       <img src="img/logotyle-mobile.svg" width="101" height="84" alt="Седона">
     </a>
     <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML academy</a>
-          </li>
-        </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML academy</a>
+        </li>
+      </ul>
     </nav>
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Показать меню</span>
@@ -36,56 +36,55 @@
   </header>
 
   <main class="page-main">
-    <section class="review__intro">
-      <h1>Оставьте свой отзыв</h1>
-      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
+    <section class="review-intro">
+      <h1 class="review-intro__header">Оставьте свой отзыв</h1>
+      <p class="review-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <form method="POST" action="https://echo.htmlacademy.ru">
-    <fieldset class="introduction">
-      <legend>Представьтесь:</legend>
-          <label for="name">Имя:</label>
-          <input type="text" id="name" name="personal-data" required placeholder="Введите имя">
-          <label for="surname">Фамилия:</label>
-          <input type="text" id="surname" name="personal-data" required placeholder="Введите фамилию">
-          <label for="second-name">Отчество:</label>
-          <input type="text" id="second-name" name="personal-data" placeholder="Введите отчество">
-    </fieldset>
-    <fieldset class="contact-info">
-      <legend>Контактная информация:</legend>
-          <label for="phone">Контактный телефон:</label>
-          <input type="tel" id="phone" name="phone-number" placeholder="Введите телефон" required>
-          <label for="email">Электронная почта:</label>
-          <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
-    </fieldset>
-    <fieldset class="impressions">
-      <legend>Ваше общее впечатление</legend>
-          <input type="radio" id="good" name="impressions" value="good" checked>
-          <label for="good">Скорее положительное</label>
-          <input type="radio" id="bad" name="impressions" value="bad">
-          <label for="bad">Скорее отрицательное</label>
-          <input type="radio" id="do-not-know" name="impressions" value="do-not-know">
-          <label for="do-not-know">Затрудняюсь ответить</label>
-    </fieldset>
-    <fieldset class="attractions">
-      <legend>Посещённые достопримечательности</legend>
-          <input type="checkbox" id="devils-bridge" name="attractions" value="devilsbridge" checked>
-          <label for="devils-bridge">Мост Дьявола</label>
-          <input type="checkbox" id="bell-mountain" name="attractions" value="bell-mountain" checked>
-          <label for="bell-mountain">Гора-Колокол</label>
-          <input type="checkbox" id="slide-park" name="attractions" value="slide-park" checked>
-          <label for="slide-park">Слайд-парк</label>
-          <input type="checkbox" id="red-rocks" name="attractions" value="red-rocks">
-          <label for="red-rocks">Красные скалы</label>
-    </fieldset>
-    <fieldset class="review">
-      <legend>Опишите свои эмоции:</legend>
+      <fieldset class="form__introduction">
+        <legend>Представьтесь:</legend>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="personal-data" required placeholder="Введите имя">
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="personal-data" required placeholder="Введите фамилию">
+        <label for="second-name">Отчество:</label>
+        <input type="text" id="second-name" name="personal-data" placeholder="Введите отчество">
+      </fieldset>
+      <fieldset class="form__contact-info">
+        <legend>Контактная информация:</legend>
+        <label for="phone">Контактный телефон:</label>
+        <input type="tel" id="phone" name="phone-number" placeholder="Введите телефон" required>
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+      </fieldset>
+      <fieldset class="form__impressions">
+        <legend>Ваше общее впечатление</legend>
+        <input type="radio" id="good" name="impressions" value="good" checked>
+        <label for="good">Скорее положительное</label>
+        <input type="radio" id="bad" name="impressions" value="bad">
+        <label for="bad">Скорее отрицательное</label>
+        <input type="radio" id="do-not-know" name="impressions" value="do-not-know">
+        <label for="do-not-know">Затрудняюсь ответить</label>
+      </fieldset>
+      <fieldset class="form__attractions">
+        <legend>Посещённые достопримечательности</legend>
+        <input type="checkbox" id="devils-bridge" name="attractions" value="devilsbridge" checked>
+        <label for="devils-bridge">Мост Дьявола</label>
+        <input type="checkbox" id="bell-mountain" name="attractions" value="bell-mountain" checked>
+        <label for="bell-mountain">Гора-Колокол</label>
+        <input type="checkbox" id="slide-park" name="attractions" value="slide-park" checked>
+        <label for="slide-park">Слайд-парк</label>
+        <input type="checkbox" id="red-rocks" name="attractions" value="red-rocks">
+        <label for="red-rocks">Красные скалы</label>
+      </fieldset>
+      <fieldset class="form__review">
+        <legend>Опишите свои эмоции:</legend>
         <div>
           <textarea>Опишите подробно все свои восторги</textarea>
         </div>
         <button class="review__button" type="submit">Отправить отзыв</button>
-    </fieldset>
-  </form>
+      </fieldset>
+    </form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
