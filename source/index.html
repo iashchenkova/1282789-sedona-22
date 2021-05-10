@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
@@ -38,7 +39,11 @@
   </header>
   <main class="page-main">
     <section class="advantages__intro">
-      <img class="advantages-head-img" src="img/back-mobile.jpg" width="320" height="389" alt="Седона">
+      <div class="advantages__intro-img">
+      <img class="advantages__head-img-figure" src="img/intro-triangle.svg.svg" alt="декоративный элемент">
+      <img class="advantages__head-img-text" src="img/sedona-welcome-text.svg" alt="Welcome to Седона">
+      <img class="advantages__head-img" src="img/sedona-welcome.jpg" alt="Седона">
+      </div>
       <h1 class="advantages__intro-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="advantages__intro-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
@@ -67,11 +72,13 @@
             <p class="advantages__number">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </li>
         </ul>
-        <div class="advantages__blue advantages__bridge">
-          <h3 class="advantages__title">Там есть мост дьявола</h3>
-          <p class="advantages__number">— №2 —</p>
-          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <div class="advantages__img-bridge"></div>
+        <div class="advantages__bridge">
+          <div class="advantages__img-bridge"><img src="img/sedona-bridge-photo.jpg" alt="Мост Седоны"></div>
+          <div class="advantages__blue">
+            <h3 class="advantages__title">Там есть мост дьявола</h3>
+            <p class="advantages__number">— №2 —</p>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
         </div>
         <ul class="advantages-grey__list">
           <li class="advantages__item">
@@ -93,13 +100,13 @@
       </div>
     </section>
     <section class="hotel-search">
-      <h2>Заинтересовались?</h2>
+      <h2 class="hotel-search__header">Заинтересовались?</h2>
       <p class="advantages__number">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в седоне</p>
       <input class="hotel-search__button button-blue" type="button" name="search" value="НАЙТИ">
     </section>
     <div class="map">
-      <img src="img/map-mobile.jpg" width="320" height="350" alt="карта Седоны">
+      <img src="img/map.jpg" width="1200" height="350" alt="карта Седоны">
     </div>
   </main>
   <footer class="page-footer">
