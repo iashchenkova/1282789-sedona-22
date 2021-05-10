@@ -1,3 +1,8 @@
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__title {
   font-size: 18px;
   line-height: 26px;
@@ -32,4 +37,28 @@
   background-color: @color-white;
   text-align: left;
   list-style: none;
+}
+
+.advantages__img-town {
+  width: 320px;
+  height: 260px;
+}
+
+.advantages__town {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 471px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    height: 768px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    height: 256px;
+    width: 1200px;
+  }
 }
