@@ -1,4 +1,19 @@
-.main-nav {
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: @color-blue;
   color: @color-white;
+
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: @color-white;
+    color: black;
+  }
 }
